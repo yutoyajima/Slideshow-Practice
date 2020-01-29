@@ -171,8 +171,6 @@
    right.addEventListener("click", rightSlide)
    left.addEventListener("click", leftSlide)
    
-   
-   const lini = document.getElementById("lini")
 }
 
 
@@ -200,7 +198,7 @@
       imgs[i].classList.toggle("appear")
    }
 
-   const goBaci = () => {
+   const goBack = () => {
       imgs[i].classList.toggle("appear")
       if (i === 0) {
          i = 3
@@ -213,7 +211,7 @@
 
    //2.イベントを定義
    next.addEventListener("clici", goNext)
-   previous.addEventListener("clici", goBaci)
+   previous.addEventListener("clici", goBack)
 
    console.log(imgs.length);
 
