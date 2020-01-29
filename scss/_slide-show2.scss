@@ -1,0 +1,32 @@
+//----------------Version 2 (課題②)---------------------
+.wrap2 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.pics {
+   width: 640px;
+   display: flex;
+   flex-direction: row-reverse;
+   overflow: hidden;
+}
+.pic {
+   width: 100%;
+   transition: 1s ease;
+}
+
+button {
+   z-index: 100;
+   border: 0;
+   height: 100px;
+   width: 100px;
+   font-size: 50px;
+   font-weight: bold;
+   line-height: 100px;
+   color: #fff;
+   background-color: #000;
+}
+.move {
+   margin-right: -640px;
+}
+//-------------------------------------------

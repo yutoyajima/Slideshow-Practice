@@ -1,0 +1,39 @@
+.wrap4 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.women {
+   width: 640px;
+   margin: 0;
+   height: 420px;
+   overflow: hidden;
+   // display: flex;
+   position: relative;
+}
+
+.woman {
+   width: 100%;
+   position: absolute;
+   transition: 1s;
+}
+
+.current {
+   z-index: 100;
+   margin: 0;
+}
+
+.waiting-on-left {
+   transform: translateX(-640px);
+   z-index: 50;
+}
+
+.waiting-on-right {
+   transform: translateX(640px);
+   z-index: 50;
+}
+
+.out {
+   display: none;
+}
