@@ -225,7 +225,6 @@ button {
   width: 640px;
   margin: 0;
   height: 420px;
-  overflow: hidden;
   position: relative;
 }
 
@@ -236,8 +235,8 @@ button {
 }
 
 .current {
-  z-index: 100;
   margin: 0;
+  z-index: 100;
 }
 
 .waiting-on-left {

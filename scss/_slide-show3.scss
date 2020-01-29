@@ -1,0 +1,61 @@
+//----------------Version 3(課題③)---------------------
+
+.pigs {
+   width: 600px;
+   margin: 0 auto;
+   overflow: hidden;
+   position: relative;
+   height: 340px;
+}
+.pig {
+   position: absolute;
+   top: 0;
+   width: 100%;
+   z-index: 1;
+   // height: 100%;
+   opacity: 1;
+}
+
+.first {
+   z-index: 1000;
+   opacity: 0;
+   transition-delay: 1s;
+   transform: scale(1.3);
+   transition: 1s;
+}
+
+.second {
+   z-index: 100;
+   transform: scale(1.3);
+   transition: 2s ease-out;
+}
+
+// .hide {
+//    display: none;
+// }
+
+// ----別解----
+
+.pig-alt {
+   position: absolute;
+   top: 0;
+   width: 100%;
+   opacity: 0;
+   transition: 2s;
+}
+
+.fadeIn {
+   opacity: 1;
+   transform: scale(1.3);
+}
+
+
+
+//-------------------------------------------
+
+
+
+
+
+
+

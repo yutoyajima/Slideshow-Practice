@@ -1,4 +1,86 @@
-//----------------課題③ (今回の課題)---------------------
+// ---------------Version 4------------------
+{
+   const woman = document.querySelectorAll(".woman")
+   const toRight = document.getElementById("to-right")
+   const toLeft = document.getElementById("to-left")
+
+   let i = 0
+   let i2 = 1
+   let i3 = 2
+
+   const slideRight = () => {
+      if (i === woman.length - 1) {
+         woman[i].classList.toggle("waiting-on-right")
+         i = 0
+         woman[i].classList.toggle("waiting-on-right")
+      } else {
+         woman[i].classList.toggle("waiting-on-right")
+         i += 1 
+         woman[i].classList.toggle("waiting-on-right")
+      }
+      
+      if (i2 === woman.length - 1) {
+         woman[i2].classList.toggle("current")
+         i2 = 0
+         woman[i2].classList.toggle("current")
+      } else {
+         woman[i2].classList.toggle("current")
+         i2 += 1 
+         woman[i2].classList.toggle("current")
+      }
+
+      if (i3 === woman.length - 1) {
+         woman[i3].classList.toggle("waiting-on-left")
+         i3 = 0
+         woman[i3].classList.toggle("waiting-on-left")
+      } else {
+         woman[i3].classList.toggle("waiting-on-left")
+         i3 += 1 
+         woman[i3].classList.toggle("waiting-on-left")
+      }
+   }
+
+
+
+   const slideLeft = () => {
+      if (i === 0) {
+         woman[i].classList.toggle("waiting-on-right")
+         i = woman.length - 1
+         woman[i].classList.toggle("waiting-on-right")
+      } else {
+         woman[i].classList.toggle("waiting-on-right")
+         i -= 1 
+         woman[i].classList.toggle("waiting-on-right")
+      }
+      
+      if (i2 === 0) {
+         woman[i2].classList.toggle("current")
+         i2 = woman.length - 1
+         woman[i2].classList.toggle("current")
+      } else {
+         woman[i2].classList.toggle("current")
+         i2 -= 1 
+         woman[i2].classList.toggle("current")
+      }
+
+      if (i3 === 0) {
+         woman[i3].classList.toggle("waiting-on-left")
+         i3 = woman.length - 1
+         woman[i3].classList.toggle("waiting-on-left")
+      } else {
+         woman[i3].classList.toggle("waiting-on-left")
+         i3 -= 1
+         woman[i3].classList.toggle("waiting-on-left")
+      }
+   }
+
+
+   toRight.addEventListener("click", slideRight)
+   toLeft.addEventListener("click", slideLeft)
+}
+
+
+//----------------Version3---------------------
 {
    const pig = document.querySelectorAll(".pig")
    
@@ -55,7 +137,7 @@
 // -----------------------------------------
 
 
-//----------------課題②---------------------
+//----------------Version 2---------------------
 {
    let i = 0
    const right = document.getElementById("right")
@@ -89,19 +171,13 @@
    right.addEventListener("click", rightSlide)
    left.addEventListener("click", leftSlide)
    
-   
-   const link = document.getElementById("link")
 }
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   //----------------課題①---------------------
+
+
+
+
+
+//----------------Version1---------------------
 
    
    //1.ノード取得
@@ -134,8 +210,8 @@
 
 
    //2.イベントを定義
-   next.addEventListener("click", goNext)
-   previous.addEventListener("click", goBack)
+   next.addEventListener("clici", goNext)
+   previous.addEventListener("clici", goBack)
 
    console.log(imgs.length);
 
