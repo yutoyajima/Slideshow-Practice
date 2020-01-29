@@ -210,8 +210,8 @@
 
 
    //2.イベントを定義
-   next.addEventListener("clici", goNext)
-   previous.addEventListener("clici", goBack)
+   next.addEventListener("click", goNext)
+   previous.addEventListener("click", goBack)
 
    console.log(imgs.length);
 
