@@ -116,26 +116,56 @@ html {
   font-size: 62.5%;
 }
 
-.wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+button {
+  z-index: 100;
+  border: 0;
+  height: 100px;
+  width: 100px;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 100px;
+  color: #fff;
+  background-color: #000;
 }
-
-.img1, .img2, .img3, .img4 {
-  display: none;
-}
-
-.appear {
-  display: block;
+@media (max-width: 600px) {
+  button {
+    height: 30px;
+    width: 30px;
+    font-size: 10px;
+    line-height: 30px;
+  }
 }
 
 h2 {
   margin-top: 50px;
   margin-bottom: 50px;
   font-weight: bold;
-  font-size: 4rem;
+  font-size: 2rem;
   text-align: center;
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgs {
+  width: 600px;
+}
+@media (max-width: 600px) {
+  .imgs {
+    width: 300px;
+  }
+}
+
+.img1, .img2, .img3, .img4 {
+  display: none;
+  width: 100%;
+}
+
+.appear {
+  display: block;
 }
 
 .wrap2 {
@@ -150,26 +180,25 @@ h2 {
   flex-direction: row-reverse;
   overflow: hidden;
 }
+@media (max-width: 600px) {
+  .pics {
+    width: 300px;
+    height: 180px;
+  }
+}
 
 .pic {
   width: 100%;
   transition: 1s ease;
 }
 
-button {
-  z-index: 100;
-  border: 0;
-  height: 100px;
-  width: 100px;
-  font-size: 50px;
-  font-weight: bold;
-  line-height: 100px;
-  color: #fff;
-  background-color: #000;
-}
-
 .move {
   margin-right: -640px;
+}
+@media (max-width: 600px) {
+  .move {
+    margin-right: -300px;
+  }
 }
 
 .pigs {
@@ -178,6 +207,12 @@ button {
   overflow: hidden;
   position: relative;
   height: 340px;
+}
+@media (max-width: 600px) {
+  .pigs {
+    width: 300px;
+    height: 180px;
+  }
 }
 
 .pig {
@@ -228,6 +263,12 @@ button {
   overflow: hidden;
   position: relative;
 }
+@media (max-width: 600px) {
+  .women {
+    width: 300px;
+    height: 180px;
+  }
+}
 
 .woman {
   width: 100%;
@@ -244,10 +285,20 @@ button {
   transform: translateX(-640px);
   z-index: 50;
 }
+@media (max-width: 600px) {
+  .waiting-on-left {
+    transform: translateX(-300px);
+  }
+}
 
 .waiting-on-right {
   transform: translateX(640px);
   z-index: 50;
+}
+@media (max-width: 600px) {
+  .waiting-on-right {
+    transform: translateX(300px);
+  }
 }
 
 .out {

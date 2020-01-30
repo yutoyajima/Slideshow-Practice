@@ -11,6 +11,10 @@
    overflow: hidden;
    // display: flex;
    position: relative;
+   @include sp {
+      width: 300px;
+      height: 180px;
+   }
 }
 
 .woman {
@@ -27,11 +31,17 @@
 .waiting-on-left {
    transform: translateX(-640px);
    z-index: 50;
+   @include sp {
+      transform: translateX(-300px);
+   }
 }
 
 .waiting-on-right {
    transform: translateX(640px);
    z-index: 50;
+   @include sp {
+      transform: translateX(300px);
+   }
 }
 
 .out {
