@@ -54,6 +54,9 @@ h2 {
    margin-top: 50px;
    margin-bottom: 50px;
    font-weight: bold;
-   font-size: 2rem;
+   font-size: 4rem;
    text-align: center;
+   @include sp {
+      font-size: 2rem;
+   }
 }
